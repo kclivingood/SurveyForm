@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" style="text/css" href="..\Survey Form\styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+      <h1>Survey Form</h1>
+      </div>
+<div id="survey-outer">
+      <div id="description">
+      <p>Let us know how we can improve this website</p>
+      </div> 
+
+<!--NAME EMAIL & AGE-->
+      
+<form id="survey-form" method="GET" action="/myamazingcoder.php">
+  <div class="divTableRow">
+    <div class="divTableCellLeft">
+      <label id="name" for="name">* Name: </label>
+    </div>
+    <div class="divTableCellRight">
+      <input type="text" class="text-field" placeholder="Enter your name">
+    </div>
+  </div>
+  <div class="divTableRow">
+    <div class="divTableCellLeft">
+      <label id="email" for="email">* Email: </label>
+    </div>
+    <div class="divTableCellRight">
+      <input type="text" class="text-field" placeholder="Enter your Email">
+    </div>
+  </div>
+  <div class="divTableRow">
+    <div class="divTableCellLeft">
+      <label id="age" for="age">* Age: </label>
+    </div>
+    <div class="divTableCellRight">
+      <input type="number" class="text-field" placeholder="Age" min="1" max="150">
+    </div>
+  </div>
+  
+  <!--ROLE-->
+  
+  <div class="divTableRow">
+    <div id="current-role-left" class="divTableCellLeft">
+      <label id="current-role-left" for="current-role-left">Which option best describes your current role?</label>
+    </div>
+    <div class="divTableCellRight">
+      <select id="role">
+        <option value="select" disabled value>Select an option</option>
+        <option value="student" selected>Student</option>
+        <option value="fulltimejob">Full Time Job</option>
+        <option value="fulltimelearner">Full Time Learner</option>
+        <option value="prefernottosay">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+  </div>
+  
+    <!--RECOMMENDATION-->
+  
+  
+  <div class="divTableRow">
+    <div id="recommend" class="divTableCellLeft">
+      <label for"recommend">* How likely are you to recommend<br>us to a friend?</label>
+    </div>
+    <div class="divTableCellRight">
+      <ul>
+        <li class="radio-button"><label>Definitely<input name="radio-buttons" value="1" type="radio" class="lists"></label></li>
+        <li class="radio-button">Maybe<label><input name="radio-buttons" value="2" type="radio" class="lists"></label></li>
+        <li><label class="radio-button">Not Sure<input name="radio-buttons" value="3" type="radio" class="lists"></label></li>
+      </ul>
+  </div>
+</div>
+  
+  <!--Like Most-->
+  
+  <div class="divTableRow">
+    <div id="like-most-FCC" class="divTableCellLeft">
+      <label for="likethemost">What do you like most in this site: </label>
+    </div>
+    <div class="divTableCellRight">
+      <select id="mostlikeright" name="mostlikeright" class="2nd-dropdown">
+        <option value="select" selected disabled>Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="opensource">Open Source</option>
+      </select>
+    </div>
+  </div>
+  
+  <!--IMPROVEMENTS-->
+ 
+  <div class="divTableRow">
+    <div id="improvements-left" class="divTableCellLeft">
+      <label for="improvements">Things that should be improved in the future<br>(Check all that apply): </label>
+    </div>
+    <div class="divTableCellRight">
+      <ul id="improvements">
+        <li class="checkbox"><label><input name="checkbox" value="1" type="checkbox" class="lists">Front-end Projects</label></li>
+        <li class="checkbox"><label><input name="checkbox" value="2" type="checkbox" class="lists">Back-end Projects</label></li>
+        <li class="checkbox"><label><input name="checkbox" value="3" type="checkbox" class="lists">Data Visualization</label></li>
+        <li class="checkbox"><label><input name="checkbox" value="4" type="checkbox" class="lists">Challenges</label></li>
+        <li class="checkbox"><label><input name="checkbox" value="5" type="checkbox" class="lists">Open Source Community</label></li>
+        <li class="checkbox"><label><input name="checkbox" value="6" type="checkbox" class="lists">Gitter help rooms</label></li>
+        <li class="checkbox"><label><input name="checkbox" value="7" type="checkbox" class="lists">Videos</label></li>
+        <li class="checkbox"><label><input name="checkbox" value="8" type="checkbox" class="lists">City Meetups</label></li>
+        <li class="checkbox"><label><input name="checkbox" value="9" type="checkbox" class="lists">Wiki</label></li>
+        <li class="checkbox"><label><input name="checkbox" value="10" type="checkbox" class="lists">Forum</label></li>
+        <li class="checkbox"><label><input name="checkbox" value="11" type="checkbox" class="lists">Additional Courses</label></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!--COMMENTS-->
+  
+  <div class="divTableRow">
+    <div class="divTableCellLeft">
+      <label id="comments-left" for="comments">Any Comments or Suggestions?</label>
+    </div>
+    <div class="divTableCellRight">
+    <textarea class="text-field" style="height:50px;resize:vertical;" placeholder="Enter your comment here...">
+    </textarea>
+    </div>
+  </div>
+                                                                                                              
+<!--Submit Button-->
+                                                                                                              
+  <button id="submit" type="submit">Submit</button>
+</form>
+</div>
